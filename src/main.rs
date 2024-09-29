@@ -18,11 +18,6 @@ impl Arguments {
                     \r\n Example input: -h 10 168.0.0.1".to_string());          
       } else {
 
-        if args.len() == 1{
-          return Err("Error: No arguments provided. 
-                      \r\n Example input: -h 10".to_string());
-        }
-
         if args.len() == 2{
           let tag = args[1].clone();
           if tag.contains("-h") || tag.contains("-help"){
